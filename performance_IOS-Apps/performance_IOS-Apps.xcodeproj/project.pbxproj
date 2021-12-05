@@ -16,7 +16,6 @@
 		8724046D273FBD7E001A4A12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8724046C273FBD7E001A4A12 /* GoogleService-Info.plist */; };
 		87240470273FC104001A4A12 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8724046F273FC104001A4A12 /* FirebaseAuth */; };
 		87240472273FC104001A4A12 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 87240471273FC104001A4A12 /* FirebaseDatabase */; };
-		87240474273FC758001A4A12 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87240473273FC758001A4A12 /* FirebaseUser.swift */; };
 		872605A727349D4D000A436A /* FriendDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872605A627349D4D000A436A /* FriendDB.swift */; };
 		8728CCF226EBA6260031DC15 /* DebugMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8728CCF126EBA6260031DC15 /* DebugMenu.storyboard */; };
 		8728CCF426EBA69C0031DC15 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728CCF326EBA69C0031DC15 /* DebugViewController.swift */; };
@@ -52,6 +51,9 @@
 		8760E73126EEA9EF00E2A6F6 /* friendsMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8760E73026EEA9EF00E2A6F6 /* friendsMenu.storyboard */; };
 		8760E73426EEAC7600E2A6F6 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760E73226EEAC7600E2A6F6 /* BasicTableViewCell.swift */; };
 		8760E73526EEAC7600E2A6F6 /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8760E73326EEAC7600E2A6F6 /* BasicTableViewCell.xib */; };
+		8763F784275D0852009F7AB0 /* ParseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8763F783275D0852009F7AB0 /* ParseData.swift */; };
+		8763F786275D0A54009F7AB0 /* getDataFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8763F785275D0A54009F7AB0 /* getDataFromURL.swift */; };
+		8763F788275D0ACE009F7AB0 /* PresentFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8763F787275D0ACE009F7AB0 /* PresentFriends.swift */; };
 		876A042E2709CE210034BB63 /* AnimationDownloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A042D2709CE210034BB63 /* AnimationDownloads.swift */; };
 		876DC1CE27353B5A005BD2B3 /* UIImageView+load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DC1CD27353B5A005BD2B3 /* UIImageView+load.swift */; };
 		876DC1D02735659D005BD2B3 /* GroupDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DC1CF2735659D005BD2B3 /* GroupDB.swift */; };
@@ -84,7 +86,6 @@
 		870CD0F726ED109E0007443A /* notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = notifications.storyboard; sourceTree = "<group>"; };
 		870CD0F926ED10AF0007443A /* blackList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = blackList.storyboard; sourceTree = "<group>"; };
 		8724046C273FBD7E001A4A12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		87240473273FC758001A4A12 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
 		872605A627349D4D000A436A /* FriendDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDB.swift; sourceTree = "<group>"; };
 		8728CCF126EBA6260031DC15 /* DebugMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebugMenu.storyboard; sourceTree = "<group>"; };
 		8728CCF326EBA69C0031DC15 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +117,9 @@
 		8760E73026EEA9EF00E2A6F6 /* friendsMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = friendsMenu.storyboard; sourceTree = "<group>"; };
 		8760E73226EEAC7600E2A6F6 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		8760E73326EEAC7600E2A6F6 /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
+		8763F783275D0852009F7AB0 /* ParseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseData.swift; sourceTree = "<group>"; };
+		8763F785275D0A54009F7AB0 /* getDataFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDataFromURL.swift; sourceTree = "<group>"; };
+		8763F787275D0ACE009F7AB0 /* PresentFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFriends.swift; sourceTree = "<group>"; };
 		876A042D2709CE210034BB63 /* AnimationDownloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDownloads.swift; sourceTree = "<group>"; };
 		876DC1CD27353B5A005BD2B3 /* UIImageView+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+load.swift"; sourceTree = "<group>"; };
 		876DC1CF2735659D005BD2B3 /* GroupDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDB.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		870CD10026ED1CFC0007443A /* friends */ = {
 			isa = PBXGroup;
 			children = (
+				8763F782275D067A009F7AB0 /* Operation */,
 				8744B020272051DA0002B165 /* FriendsVKViewController.swift */,
 				8760E73026EEA9EF00E2A6F6 /* friendsMenu.storyboard */,
 				876A042D2709CE210034BB63 /* AnimationDownloads.swift */,
@@ -347,6 +352,16 @@
 			path = GroupCell;
 			sourceTree = "<group>";
 		};
+		8763F782275D067A009F7AB0 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				8763F785275D0A54009F7AB0 /* getDataFromURL.swift */,
+				8763F783275D0852009F7AB0 /* ParseData.swift */,
+				8763F787275D0ACE009F7AB0 /* PresentFriends.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
 		876DC1D327357082005BD2B3 /* PhotoCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,7 +456,6 @@
 			children = (
 				87F7A2E22725A44400BFCBF1 /* Friend.swift */,
 				872605A627349D4D000A436A /* FriendDB.swift */,
-				87240473273FC758001A4A12 /* FirebaseUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -551,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8744B02527205A6A0002B165 /* FriendsAPI.swift in Sources */,
+				8763F784275D0852009F7AB0 /* ParseData.swift in Sources */,
 				876A042E2709CE210034BB63 /* AnimationDownloads.swift in Sources */,
 				874FAD382726DCC000768FDD /* Photo.swift in Sources */,
 				8744B02D272075C60002B165 /* PhotosAPI.swift in Sources */,
@@ -566,11 +581,11 @@
 				87334D9227428EC100C755F4 /* NewsAPI.swift in Sources */,
 				8744B02B2720661B0002B165 /* GroupsAPI.swift in Sources */,
 				8744B021272051DA0002B165 /* FriendsVKViewController.swift in Sources */,
-				87240474273FC758001A4A12 /* FirebaseUser.swift in Sources */,
 				876DC1CE27353B5A005BD2B3 /* UIImageView+load.swift in Sources */,
 				8744B023272056350002B165 /* Session.swift in Sources */,
 				878202FD27511D2800BB0159 /* NewsAuthorAndDateTableViewCell.swift in Sources */,
 				878202F327511C7900BB0159 /* NewsTextTableViewCell.swift in Sources */,
+				8763F786275D0A54009F7AB0 /* getDataFromURL.swift in Sources */,
 				874F1B7126F7551000BAAE01 /* NewsViewController.swift in Sources */,
 				87334D992742994200C755F4 /* NewsDB.swift in Sources */,
 				872A35AE272AAA9800517329 /* friendsAvatar.swift in Sources */,
@@ -585,6 +600,7 @@
 				874FAD3C2727090D00768FDD /* groupsTableViewCell.swift in Sources */,
 				87334D97274291AB00C755F4 /* NewsVKViewController.swift in Sources */,
 				87D6EB3D26E64DDA00CE8596 /* SceneDelegate.swift in Sources */,
+				8763F788275D0ACE009F7AB0 /* PresentFriends.swift in Sources */,
 				876DC1D6273570BC005BD2B3 /* photosTableViewCell.swift in Sources */,
 				8744B03027207D7E0002B165 /* PhotosVKViewController.swift in Sources */,
 				8760E73426EEAC7600E2A6F6 /* BasicTableViewCell.swift in Sources */,

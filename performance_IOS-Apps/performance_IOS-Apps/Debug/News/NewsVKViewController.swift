@@ -13,7 +13,10 @@ class NewsVKViewController: UITableViewController {
     private let newsService = NewsAPI()
     
     private var news: [News] = []
-    private var token: NotificationToken?
+    private var groups: [GroupsNews] = []
+    private var profiles: [Profile] = []
+    
+//    private var token: NotificationToken?
     
 //    private var feeds: Feed = []
     
@@ -32,10 +35,13 @@ class NewsVKViewController: UITableViewController {
         self.tableView.register(R.Nib.NewsAuthorAndDate, forCellReuseIdentifier: R.Cell.NewsAuthorAndDate)
         self.tableView.register(R.Nib.NewsLikesAndComments, forCellReuseIdentifier: R.Cell.NewsLikesAndComments)
         
-        newsService.getNews { [weak self] feeds in
+        newsService.getNews { [weak self] news, groups, profiles in
             guard let self = self else {return}
 
-//            self.feeds = feeds
+            self.news = news
+            self.groups = groups
+            self.profiles = profiles
+            
             self.tableView.reloadData()
         }
     }

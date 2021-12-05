@@ -8,23 +8,23 @@
 import Foundation
 import RealmSwift
 
-// MARK: - NewsJSON
-struct Feed: Codable {
-    let response: FeedResponse
-}
-
-//MARK: - Response
-struct FeedResponse: Codable {
-    let items: [News]
-    let groups: [GroupsNews]
-    let profiles: [Profile]
-    let nextFrom: String
-
-    enum CodingKeys: String, CodingKey {
-        case items, groups, profiles
-        case nextFrom = "next_from"
-    }
-}
+//// MARK: - NewsJSON
+//struct Feed: Codable {
+//    let response: FeedResponse
+//}
+//
+////MARK: - Response
+//struct FeedResponse: Codable {
+//    let items: [News]
+//    let groups: [GroupsNews]
+//    let profiles: [Profile]
+//    let nextFrom: String
+//
+//    enum CodingKeys: String, CodingKey {
+//        case items, groups, profiles
+//        case nextFrom = "next_from"
+//    }
+//}
 
 // MARK: - Group
 struct GroupsNews: Codable {
