@@ -40,6 +40,7 @@
 		8744B02D272075C60002B165 /* PhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744B02C272075C60002B165 /* PhotosAPI.swift */; };
 		8744B03027207D7E0002B165 /* PhotosVKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744B02F27207D7E0002B165 /* PhotosVKViewController.swift */; };
 		8744B03227207D9B0002B165 /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744B03127207D9B0002B165 /* Photos.storyboard */; };
+		8749BA842767F195008E9ED7 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8749BA832767F195008E9ED7 /* PromiseKit */; };
 		874F1B7126F7551000BAAE01 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F1B7026F7551000BAAE01 /* NewsViewController.swift */; };
 		874F1B7326F7551E00BAAE01 /* NewsMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874F1B7226F7551E00BAAE01 /* NewsMenu.storyboard */; };
 		874F1B7626F7561B00BAAE01 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F1B7426F7561B00BAAE01 /* NewsTableViewCell.swift */; };
@@ -153,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				872A35B8272ACB3D00517329 /* RealmSwift in Frameworks */,
+				8749BA842767F195008E9ED7 /* PromiseKit in Frameworks */,
 				87240470273FC104001A4A12 /* FirebaseAuth in Frameworks */,
 				872A35B6272ACB3D00517329 /* Realm in Frameworks */,
 				872A35B3272ABC9300517329 /* SwiftKeychainWrapper in Frameworks */,
@@ -484,6 +486,7 @@
 				871FD70A272C00EC005A8CE4 /* SwiftyJSON */,
 				8724046F273FC104001A4A12 /* FirebaseAuth */,
 				87240471273FC104001A4A12 /* FirebaseDatabase */,
+				8749BA832767F195008E9ED7 /* PromiseKit */,
 			);
 			productName = "performance_IOS-Apps";
 			productReference = 87D6EB3726E64DDA00CE8596 /* performance_IOS-Apps.app */;
@@ -518,6 +521,7 @@
 				872A35B4272ACB3D00517329 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				871FD709272C00EC005A8CE4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				8724046E273FC104001A4A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8749BA822767F195008E9ED7 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = 87D6EB3826E64DDA00CE8596 /* Products */;
 			projectDirPath = "";
@@ -849,6 +853,14 @@
 				minimumVersion = 5.4.4;
 			};
 		};
+		8749BA822767F195008E9ED7 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.16.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -886,6 +898,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8744B017272039960002B165 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		8749BA832767F195008E9ED7 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8749BA822767F195008E9ED7 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
