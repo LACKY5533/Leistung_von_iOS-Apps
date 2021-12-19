@@ -15,7 +15,6 @@ class BasicTableViewCell: UITableViewCell {
     
     func configure(with item: Friend) {
         self.friendLabel.text = item.fullName
-        //self.friendPhotoImage.image = UIImage(data: try! Data(contentsOf: URL(string: item.photo50)!))
         
         if let imageURL = URL(string: item.photo100) {
             friendPhotoImage.load(url: imageURL)

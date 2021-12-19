@@ -96,15 +96,9 @@ final class NewsAPI {
             }
             
             dispatchGroup.notify(queue: DispatchQueue.main) {
-//                let response = FeedResponse(items: vkNewsArray,
-//                                            groups: vkGroupsArray,
-//                                            profiles: vkProfilesArray,
-//                                            nextFrom: "123")
                 
                 completion(vkNewsArray, vkGroupsArray, vkProfilesArray)
             }
-            
         }
     }
-
 }

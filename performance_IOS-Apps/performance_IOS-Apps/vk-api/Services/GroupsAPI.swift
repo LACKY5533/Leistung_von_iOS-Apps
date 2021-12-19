@@ -39,7 +39,6 @@ final class GroupsAPI {
             }
             if let data = response.data {
                                 
-                //debugPrint(response.data?.prettyJSON as Any)
                                 
                 do {
                     let groups = try JSONDecoder().decode([Group].self, from: data)

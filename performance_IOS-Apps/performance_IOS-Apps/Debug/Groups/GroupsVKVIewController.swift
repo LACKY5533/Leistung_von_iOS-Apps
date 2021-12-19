@@ -30,36 +30,6 @@ class GroupsVKViewController: UITableViewController {
         tableView.tableHeaderView = groupsSearchController.searchBar
         groupsSearchController.searchResultsUpdater = self
         
-//        groupsService.getGroups { [weak self] groups in
-//            guard let self = self else {return}
-//
-//            let groupsOld = self.groupDB.load()
-//            groupsOld.forEach {
-//                self.groupDB.delete($0)
-//            }
-//
-//            self.groupDB.save(groups)
-//            self.groups = self.groupDB.load()
-//
-//            self.token = self.groups?.observe { [weak self] changes in
-//                guard let self = self else { return }
-//
-//                switch changes {
-//                    case .initial:
-//                        self.tableView.reloadData()
-//                    case .update(_, let deletions, let insertions, let modifications):
-//                        self.tableView.beginUpdates()
-//                        self.tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }), with: .automatic)
-//                        self.tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0)}), with: .automatic)
-//                        self.tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }), with: .automatic)
-//                        self.tableView.endUpdates()
-//                    case .error(let error):
-//                        fatalError("\(error)")
-//                }
-//
-//            }
-//        }
-        
         firstly {
             groupsService.getGroups()
         } .done { groups in
