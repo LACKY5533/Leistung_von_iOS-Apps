@@ -1,8 +1,8 @@
 //
-//  UIImageView+load.swift
-//  client-server-IOS-applications
+//  ImageView+load.swift
+//  performance_IOS-Apps
 //
-//  Created by LACKY on 05.11.2021.
+//  Created by LACKY on 19.12.2021.
 //
 
 import Foundation

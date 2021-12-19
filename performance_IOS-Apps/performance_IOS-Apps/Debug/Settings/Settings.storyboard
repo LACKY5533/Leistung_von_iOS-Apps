@@ -11,13 +11,14 @@
         <!--Настройки-->
         <scene sceneID="NYM-WM-GSz">
             <objects>
-                <viewController title="Настройки" id="h86-uM-bHk" customClass="SettingViewController" customModule="lesson_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Настройки" id="h86-uM-bHk" customClass="SettingViewController" customModule="performance_IOS_Apps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bKl-C5-xIE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1F-D3-1hl">
                                 <rect key="frame" x="20" y="725" width="249" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Выйти из системы">
                                     <color key="titleColor" systemColor="systemGrayColor"/>
@@ -44,6 +45,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOy-5e-cXr">
                                         <rect key="frame" x="0.0" y="0.0" width="139" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Основные">
                                             <color key="titleColor" systemColor="systemGrayColor"/>
@@ -55,6 +57,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3T-71-ejn">
                                         <rect key="frame" x="0.0" y="60" width="186" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Уведомления">
                                             <color key="titleColor" systemColor="systemGrayColor"/>
@@ -65,6 +68,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWQ-zH-vOM">
                                         <rect key="frame" x="0.0" y="120" width="210" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Чёрный список">
                                             <color key="titleColor" systemColor="systemGrayColor"/>

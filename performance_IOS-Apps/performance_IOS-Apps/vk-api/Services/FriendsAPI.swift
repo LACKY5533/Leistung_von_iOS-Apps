@@ -33,13 +33,11 @@ final class FriendsAPI {
 
         AF.request(url, method: .get, parameters: parameters).responseJSON { response in
             
-            //Бинарник всего JSON
             guard let data = response.data else { return }
 //            debugPrint(response.data?.prettyJSON as Any)
 
             do {
 
-                //Подбинарник только items
                 let itemsData = try JSON(data)["response"]["items"].rawData()
                 let friends = try JSONDecoder().decode([Friend].self, from: itemsData)
                 

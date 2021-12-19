@@ -10,12 +10,12 @@
         <!--Друзья-->
         <scene sceneID="221-46-AwA">
             <objects>
-                <tableViewController title="Друзья" id="Cze-d9-9lQ" customClass="FriendsVKViewController" customModule="client_server_IOS_applications" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Друзья" id="Cze-d9-9lQ" customClass="FriendsVKViewController" customModule="performance_IOS_Apps" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZYE-XY-YGV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="1vT-iN-Eqd" customClass="AnimationDownloads" customModule="client_server_IOS_applications" customModuleProvider="target">
+                        <view key="tableFooterView" contentMode="scaleToFill" id="1vT-iN-Eqd" customClass="AnimationDownloads" customModule="performance_IOS_Apps" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="92.500000346790671" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

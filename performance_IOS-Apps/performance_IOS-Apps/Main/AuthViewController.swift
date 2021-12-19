@@ -52,15 +52,6 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         }
 
         print(url)
-
-        ///https://oauth.vk.com/blank.html#access_token=5c1064b909e4d2e9f8584e6879aba7dda04604d60677d2d68f9aadb04b211e41efcc13fdd84808960f328&expires_in=86400&user_id=223761261
-        
-        //access_token
-        //5c1064b909e4d2e9f8584e6879aba7dda04604d60677d2d68f9aadb04b211e41efcc13fdd84808960f328
-        //expires_in
-        //86400
-        //user_id
-        //223761261
         
         let params = fragment
             .components(separatedBy: "&")
