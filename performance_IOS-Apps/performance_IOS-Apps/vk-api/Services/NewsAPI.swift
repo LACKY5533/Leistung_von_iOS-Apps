@@ -16,7 +16,7 @@ final class NewsAPI {
     let userId = Session.shared.userId
     let version = "5.81"
 
-    func getNews(completion: @escaping([News], [GroupsNews], [Profile])->()) {
+    func getNews(startTime: Double? = nil, startFrom: String? = "", completion: @escaping (Feed?) -> ()) {
 
         let method = "/newsfeed.get"
 
@@ -25,7 +25,9 @@ final class NewsAPI {
             "filters": "post, photo",
             "count": 2,
             "access_token": token,
-            "v": version
+            "v": version,
+            "start_time": startTime,
+            "start_from": startFrom
         ]
 
         let url = baseUrl + method
@@ -42,6 +44,7 @@ final class NewsAPI {
             let vkNewsJSONArr = json["response"]["items"].arrayValue
             let vkProfilesJSONArr = json["response"]["profiles"].arrayValue
             let vkGroupsJSONArr = json["response"]["groups"].arrayValue
+            let nextFrom = json["response"]["next_from"].stringValue
             
             var vkNewsArray: [News] = []
             var vkProfilesArray: [Profile] = []
@@ -96,8 +99,13 @@ final class NewsAPI {
             }
             
             dispatchGroup.notify(queue: DispatchQueue.main) {
+                let newsResponse = FeedResponse(items: vkNewsArray,
+                                                groups: vkGroupsArray,
+                                                profiles: vkProfilesArray,
+                                                nextFrom: nextFrom)
+                let feed = Feed(response: newsResponse)
                 
-                completion(vkNewsArray, vkGroupsArray, vkProfilesArray)
+                completion(feed)
             }
         }
     }

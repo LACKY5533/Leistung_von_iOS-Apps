@@ -32,36 +32,6 @@ class FriendsVKViewController: UITableViewController {
         tableView.tableHeaderView = friendsSearchController.searchBar
         friendsSearchController.searchResultsUpdater = self
         
-//        friendsService.getFriends { [weak self] friends in
-//            guard let self = self else {return}
-//
-//            let friendsOld = self.friendDB.load()
-//            friendsOld.forEach {
-//                self.friendDB.delete($0)
-//            }
-//
-//            self.friendDB.save(friends)
-//            self.friends = self.friendDB.load()
-//
-//            self.token = self.friends?.observe { [weak self] changes in
-//                guard let self = self else { return }
-//
-//                switch changes {
-//                    case .initial:
-//                        self.tableView.reloadData()
-//                    case .update(_, let deletions, let insertions, let modifications):
-//                        self.tableView.beginUpdates()
-//                        self.tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }), with: .automatic)
-//                        self.tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0)}), with: .automatic)
-//                        self.tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }), with: .automatic)
-//                        self.tableView.endUpdates()
-//                    case .error(let error):
-//                        fatalError("\(error)")
-//                }
-//            }
-//
-//        }
-        
         //Operation queue results
         let operationsQueue = OperationQueue.main
 
