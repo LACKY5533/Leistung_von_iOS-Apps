@@ -10,6 +10,10 @@ import Alamofire
 import SwiftyJSON
 import PromiseKit
 
+protocol GroupsAPIprotocol {
+    func getGroups(completion: @escaping([Group])->())
+}
+
 final class GroupsAPI {
 
     let baseUrl = "https://api.vk.com/method"
@@ -17,8 +21,7 @@ final class GroupsAPI {
     let userId = Session.shared.userId
     let version = "5.81"
 
-    func getGroups() -> Promise<[Group]> {
-        return Promise<[Group]> {resolver in
+    func getGroups(completion: @escaping([Group])->()) {
 
         let method = "/groups.get"
 
@@ -35,20 +38,19 @@ final class GroupsAPI {
         AF.request(url, method: .get, parameters: parameters).responseJSON { response in
 
             if let error = response.error {
-                resolver.reject(error)
+//                resolver.reject(error)
             }
             if let data = response.data {
                                 
                                 
                 do {
                     let groups = try JSONDecoder().decode([Group].self, from: data)
-                    resolver.fulfill(groups)
+//                    resolver.fulfill(groups)
                                     
                 } catch {
                     print(error)
                 }
             }
-        }
         }
     }
 }
