@@ -30,21 +30,29 @@ class GroupsVKViewController: UITableViewController {
         tableView.tableHeaderView = groupsSearchController.searchBar
         groupsSearchController.searchResultsUpdater = self
         
-        firstly {
-            groupsService.getGroups()
-        } .done { groups in
-            let groupsOld = self.groupDB.load()
-            
-            groupsOld.forEach {
-                self.groupDB.delete($0)
-            }
-            
-            self.groupDB.save(groups)
-            self.groups = self.groupDB.load()
-        } .catch { error in
-            print(error)
-        }
+//        firstly {
+//            groupsService.getGroups()
+//        } .done { groups in
+//            let groupsOld = self.groupDB.load()
+//
+//            groupsOld.forEach {
+//                self.groupDB.delete($0)
+//            }
+//
+//            self.groupDB.save(groups)
+//            self.groups = self.groupDB.load()
+//        } .catch { error in
+//            print(error)
+//        }
+        
+        let groupsAdapter = GroupAdapter(adaptee: groupDB)
+        
+        makeGroupList(aGroup: groupsService)
     }
+    
+    func makeGroupList(aGroup: GroupsAPIprotocol) {
+            aGroup.getGroups()
+        }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if groupsSearchController.isActive {
