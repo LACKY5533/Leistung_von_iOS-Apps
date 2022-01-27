@@ -20,6 +20,8 @@ class GroupsVKViewController: UITableViewController {
     private var token: NotificationToken?
     
     var SearchResultGroups: [Group] = []
+    
+    private let groupsProxy = GroupsProxy(groupsService: GroupAdapter())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,11 @@ class GroupsVKViewController: UITableViewController {
         groupsSearchController = UISearchController(searchResultsController: nil)
         tableView.tableHeaderView = groupsSearchController.searchBar
         groupsSearchController.searchResultsUpdater = self
+        
+        groupsProxy.getGroups { [weak self] groups in
+            self.groups = groups
+
+        }
         
 //        firstly {
 //            groupsService.getGroups()

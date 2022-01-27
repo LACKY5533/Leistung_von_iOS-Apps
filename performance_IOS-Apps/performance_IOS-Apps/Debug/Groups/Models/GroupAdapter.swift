@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class GroupAdapter: GroupsAPIprotocol{
+class GroupAdapter {
 
     let baseUrl = "https://api.vk.com/method"
     let token = Session.shared.token
